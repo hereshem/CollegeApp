@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.register).setOnClickListener(this);
         findViewById(R.id.list).setOnClickListener(this);
         findViewById(R.id.message).setOnClickListener(this);
+        findViewById(R.id.drawer).setOnClickListener(this);
+        findViewById(R.id.tabbed).setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +30,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.message:
                 startActivity(new Intent(getApplicationContext(), MessageActivity.class));
+                break;
+            case R.id.drawer:
+                startActivity(new Intent(getApplicationContext(), DrawerActivity.class));
+                break;
+            case R.id.tabbed:
+                startActivity(new Intent(getApplicationContext(), TabbedActivity.class));
                 break;
 
         }

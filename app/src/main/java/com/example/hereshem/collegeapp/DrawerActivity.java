@@ -46,7 +46,7 @@ public class DrawerActivity extends AppCompatActivity
 
         ////////////////////////////////
 
-        startFragment(new RegisterFragment());
+        startFragment(new HomeFragment());
 //        startActivity(RegisterActivity.class);
 
         TextView tv = (TextView) navigationView.getHeaderView(0).findViewById(R.id.drawer_name);
@@ -60,7 +60,7 @@ public class DrawerActivity extends AppCompatActivity
     }
 
     private void startFragment(Fragment fragment) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame, fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame, fragment).addToBackStack("").commit();
     }
 
     @Override
@@ -104,16 +104,29 @@ public class DrawerActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            startFragment(new LoginFragment());
+            startFragment(new HomeFragment());
         } else if (id == R.id.nav_gallery) {
-            startActivity(RegisterActivity.class);
+            startFragment(new RegisterFragment());
 
         } else if (id == R.id.nav_slideshow) {
-
+            Fragment fragment = new TabbedFragment();
+            Bundle bundle = new Bundle();
+            bundle.putInt("position", 0);
+            fragment.setArguments(bundle);
+            startFragment(fragment);
 
         } else if (id == R.id.nav_manage) {
-
+            Fragment fragment = new TabbedFragment();
+            Bundle bundle = new Bundle();
+            bundle.putInt("position", 1);
+            fragment.setArguments(bundle);
+            startFragment(fragment);
         } else if (id == R.id.nav_share) {
+            Fragment fragment = new TabbedFragment();
+            Bundle bundle = new Bundle();
+            bundle.putInt("position", 2);
+            fragment.setArguments(bundle);
+            startFragment(fragment);
 
         } else if (id == R.id.nav_send) {
 

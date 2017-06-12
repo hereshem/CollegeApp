@@ -30,6 +30,8 @@ public class RegisterActivity extends AppCompatActivity {
         pass = (EditText) findViewById(R.id.pass);
         button = (Button) findViewById(R.id.button);
 
+        name.setText(getIntent().getStringExtra("name"));
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

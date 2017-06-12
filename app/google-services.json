@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "1019512179168",
-    "firebase_url": "https://adsnavigator-b15d4.firebaseio.com",
-    "project_id": "adsnavigator-b15d4",
-    "storage_bucket": "adsnavigator-b15d4.appspot.com"
+    "project_number": "408234528004",
+    "firebase_url": "https://collegeapp-ed9d8.firebaseio.com",
+    "project_id": "collegeapp-ed9d8",
+    "storage_bucket": "collegeapp-ed9d8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1019512179168:android:f29beaf09b5cd11f",
+        "mobilesdk_app_id": "1:408234528004:android:6118e923f0c39327",
         "android_client_info": {
-          "package_name": "com.majorproject.adsnavigator"
+          "package_name": "com.example.hereshem.collegeapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1019512179168-bu10nmtgub14igut70phu1rkn3rcjqij.apps.googleusercontent.com",
+          "client_id": "408234528004-e335gsl6dgbltoi1nsitgk643jihtefp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.majorproject.adsnavigator",
-            "certificate_hash": "d9bff542bdcde8bf4927546d0a51e66564d0042c"
+            "package_name": "com.example.hereshem.collegeapp",
+            "certificate_hash": "fa03e7cfbdafe328798de26e96b272bdc569a5c8"
           }
         },
         {
-          "client_id": "1019512179168-523tmck9rt3pod24e60kjuofkdf3oe2h.apps.googleusercontent.com",
+          "client_id": "408234528004-hq9e28k4nnv4muhflj072t9fb8ubs8t8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAU_55DD0hE7N1ojAemnx5PbQa6xB1Rrps"
+          "current_key": "AIzaSyB620qppkUaMFrwtxIUhugR1dAvTfZ1ECw"
         }
       ],
       "services": {
@@ -40,41 +40,10 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "1019512179168-523tmck9rt3pod24e60kjuofkdf3oe2h.apps.googleusercontent.com",
+              "client_id": "408234528004-hq9e28k4nnv4muhflj072t9fb8ubs8t8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1019512179168:android:6118e923f0c39327",
-        "android_client_info": {
-          "package_name": "com.example.hereshem.collegeapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1019512179168-523tmck9rt3pod24e60kjuofkdf3oe2h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAU_55DD0hE7N1ojAemnx5PbQa6xB1Rrps"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

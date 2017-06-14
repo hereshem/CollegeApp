@@ -12,6 +12,8 @@ import java.util.List;
 public class MessageModel {
     int id;
 
+
+
     public MessageModel(String from, String image_from, String to, String text) {
         this.from = from;
         this.image_from = image_from;
@@ -21,13 +23,14 @@ public class MessageModel {
 
     public MessageModel(JSONObject jsonObject) {
         this.setId(jsonObject.optInt("id"));
-        this.setTo(jsonObject.optString("from", "me"));
-        this.setFrom(jsonObject.optString("to", "Guest"));
-        this.setImage_from(jsonObject.optString("image_from", ""));
-        this.setText(jsonObject.optString("text"));
-        this.setTimestamp(jsonObject.optString("timestamp", "4 mins ago"));
+        this.setTo(jsonObject.optString("to", "Guest"));
+        this.setFrom(jsonObject.optString("title", "Guest"));
+        this.setImage_from(jsonObject.optString("image", ""));
+        this.setText(jsonObject.optString("description"));
+        this.setTimestamp(jsonObject.optString("pubDate", "4 mins ago"));
 
     }
+
 
     public int getId() {
         return id;

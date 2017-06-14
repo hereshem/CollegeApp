@@ -39,7 +39,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageH
         holder.text.setText(message.getText());
         holder.time.setText(message.getTimestamp());
         // set image
-        Picasso.with(context).load(message.getImage_from()).into(holder.image);
+        if(!message.getImage_from().isEmpty())
+            Picasso.with(context).load(message.getImage_from()).into(holder.image);
     }
 
     @Override
